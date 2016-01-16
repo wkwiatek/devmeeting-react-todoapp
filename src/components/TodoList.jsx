@@ -2,12 +2,9 @@ import React from "react";
 
 class TodoList extends React.Component {
   render() {
+    const todos = ["Todo 1", "Todo 2", "Todo 3"];
     return (
-      <ul>
-        <li>Todo 1</li>
-        <li>Todo 2</li>
-        <li>Todo 3</li>
-      </ul>
+      <ul>{ todos.map(todo => <li key={todo}>{ todo }</li>) }</ul>
     );
   }
 }
