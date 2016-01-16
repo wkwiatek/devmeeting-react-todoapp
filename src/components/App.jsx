@@ -8,14 +8,18 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-      todos: ["Todo 1", "Todo 2", "Todo 3"],
+      todos: [],
     };
+  }
+
+  onNewTodo(todo) {
+    this.setState({ todos: [...this.state.todos, todo] });
   }
 
   render() {
     return (
       <div>
-       <TodoForm />
+       <TodoForm onNewTodo={ ::this.onNewTodo } />
        <TodoList todos={ this.state.todos } />
       </div>
     );

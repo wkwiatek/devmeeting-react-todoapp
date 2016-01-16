@@ -1,6 +1,10 @@
 import React from "react";
 
 class TodoForm extends React.Component {
+  static propTypes = {
+    onNewTodo: React.PropTypes.func.isRequired,
+  };
+
   constructor(props) {
     super(props);
 
@@ -9,7 +13,7 @@ class TodoForm extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    console.log(this.state.todo);
+    this.props.onNewTodo(this.state.todo);
   }
 
   handleChange({ target }) {
