@@ -5,6 +5,11 @@ class TodoForm extends React.Component {
     super(props);
   }
 
+  handleSubmit(e) {
+    e.preventDefault();
+    console.log(this.state);
+  }
+
   handleChange({ target }) {
     this.setState({ [target.name]: target.value });
   }
@@ -12,7 +17,7 @@ class TodoForm extends React.Component {
   render() {
     return (
       <div className="todo-form">
-        <form>
+        <form onSubmit={ ::this.handleSubmit }>
           <input type="text" name="todo" onChange={ ::this.handleChange } />
           <input type="submit" />
         </form>
