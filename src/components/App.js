@@ -11,10 +11,14 @@ class App extends React.Component {
     };
   }
 
+  newTodo(todo) {
+    this.setState({ todos: [...this.state.todos, todo] });
+  }
+
   render() {
     return (
       <div className="app">
-        <TodoForm />
+        <TodoForm newTodo={ ::this.newTodo } />
         <TodoList todos={ this.state.todos } />
       </div>
     );
