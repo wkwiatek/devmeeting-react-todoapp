@@ -2,13 +2,10 @@ import React from "react";
 
 class TodoList extends React.Component {
   render() {
+    const todos = [ "Task 1", "Task 2", "Task 3" ];
     return (
       <div className="todo-list">
-        <ul>
-          <li>Task 1</li>
-          <li>Task 2</li>
-          <li>Task 3</li>
-        </ul>
+        <ul>{ todos.map(todo => <li key={ todo }>{ todo }</li>) }</ul>
       </div>
     );
   }
