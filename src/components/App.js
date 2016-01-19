@@ -3,12 +3,19 @@ import TodoForm from "./TodoForm";
 import TodoList from "./TodoList";
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      todos: [],
+    };
+  }
+
   render() {
-    const todos = [ "Task 1", "Task 2", "Task 3" ];
     return (
       <div className="app">
         <TodoForm />
-        <TodoList todos={ todos } />
+        <TodoList todos={ this.state.todos } />
       </div>
     );
   }
