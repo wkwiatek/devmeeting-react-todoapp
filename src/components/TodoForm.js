@@ -1,6 +1,10 @@
 import React from "react";
 
 class TodoForm extends React.Component {
+  static propTypes = {
+    newTodo: React.PropTypes.func.isRequired,
+  };
+
   constructor(props) {
     super(props);
   }
