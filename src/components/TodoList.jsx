@@ -1,6 +1,10 @@
 import React from "react";
 
 class TodoList extends React.Component {
+  static propTypes = {
+    todos: React.PropTypes.arrayOf(React.PropTypes.string).isRequired,
+  };
+
   render() {
     return (
       <div className="todo-list">
