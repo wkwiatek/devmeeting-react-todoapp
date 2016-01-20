@@ -2,7 +2,7 @@ import React from "react";
 import TodoForm from "./TodoForm";
 import TodoList from "./TodoList";
 import store from "../store";
-import { addTodo } from "../actionCreators/todoActionCreators";
+import { addTodo, fetchTodos } from "../actionCreators/todoActionCreators";
 
 class App extends React.Component {
   constructor(props) {
@@ -13,6 +13,8 @@ class App extends React.Component {
 
   componentDidMount() {
     this.unsubscribe = store.subscribe(::this.onChange);
+
+    store.dispatch(fetchTodos());
   }
 
   componentWillUnmount() {
