@@ -1,6 +1,7 @@
 var webpack           = require("webpack");
 var path              = require("path");
 var HTMLWebpackPlugin = require("html-webpack-plugin");
+var CopyWebpackPlugin = require("copy-webpack-plugin");
 
 var config = {
   entry: [
@@ -23,6 +24,9 @@ var config = {
     new HTMLWebpackPlugin({
       template: path.resolve("src/index.html"),
     }),
+    new CopyWebpackPlugin([
+      { from: "src/static" }
+    ]),
   ],
 
   module: {
