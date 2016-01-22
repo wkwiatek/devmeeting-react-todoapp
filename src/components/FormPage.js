@@ -1,6 +1,21 @@
 import React from "react";
 
 class FormPage extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      errors: {},
+    };
+  }
+
+  handleChange({ target }) {
+    this.setState({
+      [target.name]: target.value,
+      errors: {...this.state.errors, [target.name]: target.validationMessage},
+    });
+  }
+
   render() {
     return (
       <div className="form-page">
