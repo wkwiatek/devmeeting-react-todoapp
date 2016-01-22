@@ -1,27 +1,16 @@
 import React from "react";
-import TodoForm from "./TodoForm";
-import TodoList from "./TodoList";
 import DevTools from "./DevTools";
-import { connect } from "react-redux";
-import { bindActionCreators } from "redux";
-import * as actions from "../actionCreators/todoActionCreators";
+import TodoPage from "./TodoPage";
 
 class App extends React.Component {
-  componentDidMount() {
-    this.props.fetchTodos();
-  }
-
   render() {
     return (
       <div className="app">
-        <TodoForm newTodo={ this.props.addTodo } />
-        <TodoList todos={ this.props.todos } />
+        <TodoPage />
         <DevTools />
       </div>
     );
   }
 }
 
-export default connect(state => state, dispatch => ({
-  ...bindActionCreators(actions, dispatch)
-}))(App);
+export default App;
