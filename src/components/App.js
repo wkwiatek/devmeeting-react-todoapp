@@ -6,7 +6,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="app">
-        <TodoPage />
+        { this.props.children }
         <DevTools />
       </div>
     );
