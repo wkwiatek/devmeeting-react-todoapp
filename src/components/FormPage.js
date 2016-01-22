@@ -9,10 +9,23 @@ class FormPage extends React.Component {
     };
   }
 
+  _validationHash(input) {
+    return { [input.name]: input.validationMessage };
+  }
+
+  handleSubmit(e) {
+    e.preventDefault();
+    e.target.checkValidity()
+    const errors = [].slice.apply(e.target.querySelectorAll("input"))
+      .reduce((msgs, input) => ({...msgs, ...this._validationHash(input) }), {});
+
+    this.setState({ errors });
+  }
+
   handleChange({ target }) {
     this.setState({
       [target.name]: target.value,
-      errors: {...this.state.errors, [target.name]: target.validationMessage},
+      errors: {...this.state.errors, ...this._validationHash(input)},
     });
   }
 
