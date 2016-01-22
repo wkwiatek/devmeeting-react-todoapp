@@ -10,7 +10,7 @@ class FormPage extends React.Component {
   }
 
   _validationHash(input) {
-    return { [input.name]: input.validationMessage };
+    return { [input.name]: input.dataset.message || input.validationMessage };
   }
 
   handleSubmit(e) {
