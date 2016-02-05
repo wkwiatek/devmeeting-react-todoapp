@@ -3,11 +3,7 @@
   "version": "0.0.1",
   "description": "Warm-up app prepared for Devmeetings.pl React workshops participants",
   "scripts": {
-    "start": "node server/server.js",
-    "dev": "node server/webpack-dev-server",
-    "postinstall": "npm run build",
-    "build": "webpack --config webpack/webpack.prod.config.js -p",
-    "clean": "rm -rf build",
+    "start": "lite-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
