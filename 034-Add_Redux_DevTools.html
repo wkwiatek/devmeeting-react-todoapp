@@ -8,9 +8,10 @@
         <script src="http://xpla.org/static/js/slide_loader.3.0.0.js"></script>
       </head>
       <body class="xp-slide">
-        <div class="xp-column">
-          <xp-editor active="package.json">
-            	<script id="package.json" highlight="50-58" type="application/octetstream" src="034/package.json"></script>
+        <div class="xp-row with-comments">
+          <div class="xp-column">
+            <xp-editor active="package.json">
+              	<script id="package.json" highlight="50-58" type="application/octetstream" src="034/package.json"></script>
 	<script id="src/components/App.js" highlight="1-7,16-22" type="application/octetstream" src="034/src/components/App.js"></script>
 	<script id="src/components/DevTools.js" highlight="1-12" type="application/octetstream" src="034/src/components/DevTools.js"></script>
 	<script id="src/store.js" highlight="1-12" type="application/octetstream" src="034/src/store.js"></script>
@@ -25,10 +26,14 @@
 	<script id="src/components/TodoList.js" type="application/octetstream" src="016/src/components/TodoList.js"></script>
 	<script id="src/middleware/logger.js" type="application/octetstream" src="022/src/middleware/logger.js"></script>
 	<script id="src/reducers/todos.js" type="application/octetstream" src="026/src/reducers/todos.js"></script>
-          </xp-editor>
+            </xp-editor>
+          </div>
+          <div class="xp-column">
+            <xp-preview runner="html-jsx"></xp-preview>
+          </div>
         </div>
-        <div class="xp-column">
-          <xp-preview runner="html-jsx"></xp-preview>
+        <div class="xp-row comments">
+          <h1>Add Redux DevTools</h1>
         </div>
       </body>
     </html>

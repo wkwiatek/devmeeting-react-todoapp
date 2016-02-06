@@ -8,9 +8,10 @@
         <script src="http://xpla.org/static/js/slide_loader.3.0.0.js"></script>
       </head>
       <body class="xp-slide">
-        <div class="xp-column">
-          <xp-editor active="src/components/FormPage.js">
-            	<script id="src/components/FormPage.js" highlight="9-31" type="application/octetstream" src="039/src/components/FormPage.js"></script>
+        <div class="xp-row with-comments">
+          <div class="xp-column">
+            <xp-editor active="src/components/FormPage.js">
+              	<script id="src/components/FormPage.js" highlight="9-31" type="application/octetstream" src="039/src/components/FormPage.js"></script>
 	<script id="config.js" type="application/octetstream" src="002/config.js"></script>
 	<script id="index.html" type="application/octetstream" src="002/index.html"></script>
 	<script id="package.json" type="application/octetstream" src="036/package.json"></script>
@@ -28,10 +29,14 @@
 	<script id="src/components/TodoPage.js" type="application/octetstream" src="035/src/components/TodoPage.js"></script>
 	<script id="src/middleware/logger.js" type="application/octetstream" src="022/src/middleware/logger.js"></script>
 	<script id="src/reducers/todos.js" type="application/octetstream" src="026/src/reducers/todos.js"></script>
-          </xp-editor>
+            </xp-editor>
+          </div>
+          <div class="xp-column">
+            <xp-preview runner="html-jsx"></xp-preview>
+          </div>
         </div>
-        <div class="xp-column">
-          <xp-preview runner="html-jsx"></xp-preview>
+        <div class="xp-row comments">
+          <h1>Handle validation on submit</h1>
         </div>
       </body>
     </html>

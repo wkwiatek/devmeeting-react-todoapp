@@ -8,9 +8,10 @@
         <script src="http://xpla.org/static/js/slide_loader.3.0.0.js"></script>
       </head>
       <body class="xp-slide">
-        <div class="xp-column">
-          <xp-editor active="package.json">
-            	<script id="package.json" highlight="42-48" type="application/octetstream" src="020/package.json"></script>
+        <div class="xp-row with-comments">
+          <div class="xp-column">
+            <xp-editor active="package.json">
+              	<script id="package.json" highlight="42-48" type="application/octetstream" src="020/package.json"></script>
 	<script id="src/store.js" highlight="1-6" type="application/octetstream" src="020/src/store.js"></script>
 	<script id="config.js" type="application/octetstream" src="002/config.js"></script>
 	<script id="index.html" type="application/octetstream" src="002/index.html"></script>
@@ -22,10 +23,14 @@
 	<script id="src/components/TodoForm.js" type="application/octetstream" src="016/src/components/TodoForm.js"></script>
 	<script id="src/components/TodoList.js" type="application/octetstream" src="016/src/components/TodoList.js"></script>
 	<script id="src/reducers/todos.js" type="application/octetstream" src="019/src/reducers/todos.js"></script>
-          </xp-editor>
+            </xp-editor>
+          </div>
+          <div class="xp-column">
+            <xp-preview runner="html-jsx"></xp-preview>
+          </div>
         </div>
-        <div class="xp-column">
-          <xp-preview runner="html-jsx"></xp-preview>
+        <div class="xp-row comments">
+          <h1>Create store</h1>
         </div>
       </body>
     </html>
