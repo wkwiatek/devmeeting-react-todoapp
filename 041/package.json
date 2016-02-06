@@ -1,0 +1,56 @@
+{
+  "name": "devmeeting-react-todoapp",
+  "version": "0.0.1",
+  "description": "Warm-up app prepared for Devmeetings.pl React workshops participants",
+  "scripts": {
+    "start": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichalZalecki/devmeeting-react-todoapp.git"
+  },
+  "author": "MichalZalecki <michal@michalzalecki.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MichalZalecki/devmeeting-react-todoapp/issues"
+  },
+  "homepage": "https://github.com/MichalZalecki/devmeeting-react-todoapp#readme",
+  "dependencies": {
+    "babel": "^6.0.15",
+    "babel-core": "^6.1.2",
+    "babel-loader": "^6.0.1",
+    "babel-preset-es2015": "^6.1.2",
+    "babel-preset-react": "^6.1.2",
+    "babel-preset-stage-0": "^6.1.2",
+    "css-loader": "^0.23.0",
+    "express": "^4.13.3",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "history": "^1.17.0",
+    "html-webpack-plugin": "^1.6.1",
+    "postcss": "^5.0.14",
+    "postcss-browser-reporter": "^0.4.0",
+    "postcss-cssnext": "^2.4.0",
+    "postcss-import": "^7.1.3",
+    "postcss-loader": "^0.8.0",
+    "postcss-nested": "^1.0.0",
+    "postcss-reporter": "^1.3.0",
+    "postcss-url": "^5.0.2",
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0",
+    "react-hot-loader": "^1.2.8",
+    "react-redux": "^4.0.6",
+    "react-router": "^1.0.3",
+    "redux": "^3.0.5",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.11.0"
+  },
+  "devDependencies": {
+    "extend": "^3.0.0",
+    "nodemon": "^1.4.1",
+    "redux-devtools": "^3.0.1",
+    "redux-devtools-dock-monitor": "^1.0.1",
+    "redux-devtools-log-monitor": "^1.0.2",
+    "webpack-dev-server": "^1.10.1"
+  }
+}
