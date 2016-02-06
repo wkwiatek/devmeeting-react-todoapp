@@ -37,7 +37,7 @@ function fetchTodosFailure(error) {
 export function fetchTodos() {
   return dispatch => {
     dispatch(fetchTodosRequest());
-    axios.get("/todos.json")
+    axios.get("todos.json")
       .then(({ data }) => dispatch(fetchTodosSuccess(data)))
       .catch((error) => dispatch(fetchTodosFailure(error)));
   };
