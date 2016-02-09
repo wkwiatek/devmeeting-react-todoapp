@@ -5,16 +5,20 @@ import store from "../store";
 import { addTodo } from "../actionCreators/todoActionCreators";
 
 class App extends React.Component {
+
+  //5/ Stan komponentu otrzymujemy ze store'a
   constructor(props) {
     super(props);
 
     this.state = store.getState();
   }
 
+  //3/ I podpinamy się pod zmiany
   componentDidMount() {
     this.unsubscribe = store.subscribe(::this.onChange);
   }
 
+  //3/ Musimy pamiętać o wyłączeniu nasłuchiwania, gdy komponentu już nie ma
   componentWillUnmount() {
     this.unsubscribe();
   }

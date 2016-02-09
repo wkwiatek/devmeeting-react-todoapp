@@ -11,6 +11,7 @@ class App extends React.Component {
     this.state = store.getState();
   }
 
+  //5/ Przy tworzeniu komponentu robimy fetch
   componentDidMount() {
     this.unsubscribe = store.subscribe(::this.onChange);
 

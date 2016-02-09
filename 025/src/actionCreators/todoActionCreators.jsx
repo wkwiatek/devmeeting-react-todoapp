@@ -1,3 +1,4 @@
+// 2. Do łączenia z API wykorzystamy axios
 import axios from "axios";
 import {
   ADD_TODO,
@@ -13,6 +14,7 @@ export function addTodo(todo) {
   };
 }
 
+//5/ 1. Teraz tworzymy akcje
 function fetchTodosRequest() {
   return {
     type: FETCH_TODOS_REQUEST,

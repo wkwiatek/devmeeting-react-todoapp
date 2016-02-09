@@ -5,6 +5,7 @@ class TodoForm extends React.Component {
     super(props);
   }
 
+  //4/ 3. Odwołujemy się do funkcji przekazanej jako props
   handleSubmit(e) {
     e.preventDefault();
     this.props.newTodo(this.state.todo);

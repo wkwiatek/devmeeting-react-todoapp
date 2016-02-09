@@ -5,6 +5,7 @@ class TodoForm extends React.Component {
     super(props);
   }
 
+  //3/ Możemy teraz użyć setState do ustawienia stanu
   handleChange({ target }) {
     this.setState({ [target.name]: target.value });
   }
