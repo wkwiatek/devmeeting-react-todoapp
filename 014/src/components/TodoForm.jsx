@@ -5,6 +5,7 @@ class TodoForm extends React.Component {
     super(props);
   }
 
+  //4/ 2. I zatrzymajmy domyślną akcję
   handleSubmit(e) {
     e.preventDefault();
     console.log(this.state);
@@ -17,6 +18,7 @@ class TodoForm extends React.Component {
   render() {
     return (
       <div className="todo-form">
+        { /* // 1. Stórzmy teraz event na submit */ }
         <form onSubmit={ ::this.handleSubmit }>
           <input type="text" name="todo" onChange={ ::this.handleChange } />
           <input type="submit" />

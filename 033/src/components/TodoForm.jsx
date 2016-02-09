@@ -5,6 +5,7 @@ class TodoForm extends React.Component {
     newTodo: React.PropTypes.func.isRequired,
   };
 
+  //5/ Ustawianie stanu wygląda teraz tak
   constructor(props) {
     super(props);
 

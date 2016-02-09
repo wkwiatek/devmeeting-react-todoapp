@@ -1,6 +1,7 @@
 import React from "react";
 
 class TodoForm extends React.Component {
+  // W łatwy sposób możemy dodać walidację properties naszego komponentu
   static propTypes = {
     newTodo: React.PropTypes.func.isRequired,
   };

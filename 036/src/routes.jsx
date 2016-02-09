@@ -7,6 +7,7 @@ import { Provider } from "react-redux";
 import App from "./components/App";
 import TodoPage from "./components/TodoPage";
 
+//9/ Wykorzysujemy Router oraz Route 
 const routes = (
   <Provider store={ store }>
     <Router history={ createHashHistory() }>

@@ -11,6 +11,7 @@ class App extends React.Component {
     };
   }
 
+  //3/ 2. Chcemy dostać nową tablicę, więc unikamy .push()
   newTodo(todo) {
     this.setState({ todos: [...this.state.todos, todo] });
   }
@@ -18,6 +19,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="app">
+        { /* // 1. Do komponentu możemy przekazać też funkcję */ }
         <TodoForm newTodo={ ::this.newTodo } />
         <TodoList todos={ this.state.todos } />
       </div>
