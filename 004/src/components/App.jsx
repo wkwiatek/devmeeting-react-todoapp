@@ -3,8 +3,8 @@ import React from "react";
 class App extends React.Component {
   //12/ 1. Umieszczamy wszystkie potrzebne elementy.
   render() {
+    //12/ 2. Uwaga: to nie jest html tylko jsx! (vide className)
     return (
-      { /* //10/ 2. Uwaga: to nie jest html tylko jsx! (vide className) */ }
       <div className="app">
         <form>
           <input type="text" /><input type="submit"/>
