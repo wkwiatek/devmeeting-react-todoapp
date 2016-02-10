@@ -5,7 +5,7 @@ class TodoForm extends React.Component {
     super(props);
   }
 
-  //4/ 2. I zatrzymajmy domyślną akcję 
+  //4/ 2. I zatrzymajmy domyślną akcję
   handleSubmit(e) {
     e.preventDefault();
     console.log(this.state);
