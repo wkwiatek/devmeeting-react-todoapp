@@ -1,6 +1,6 @@
 import React from "react";
 
-//11/ Przenieśmy szablon html do nowego komonentu
+//11/ Przenieśmy szablon html do nowego komponentu
 class TodoForm extends React.Component {
   render() {
     return (
