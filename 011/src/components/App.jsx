@@ -16,7 +16,7 @@ class App extends React.Component {
     return (
       <div className="app">
         <TodoForm />
-        // Dzięki któremu React może śledzić zmiany
+        { /* // Dzięki któremu React może śledzić zmiany */ }
         <TodoList todos={ this.state.todos } />
       </div>
     );

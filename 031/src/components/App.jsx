@@ -20,4 +20,5 @@ class App extends React.Component {
   }
 }
 
+// Możemy dzięki temu użyć funkcji connect mapującej stan
 export default connect(state => state)(App);

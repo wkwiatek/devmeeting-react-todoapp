@@ -4,7 +4,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="app">
-        //2/ Istotą Reacta jest tworzenie reużywalnych komponentów.
+        { /* //2/ Istotą Reacta jest tworzenie reużywalnych komponentów. */ }
         <TodoForm />
         <TodoList />
       </div>

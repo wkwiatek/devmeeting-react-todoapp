@@ -18,7 +18,7 @@ class TodoForm extends React.Component {
   render() {
     return (
       <div className="todo-form">
-        // 1. Stórzmy teraz event na submit
+        { /* // 1. Stórzmy teraz event na submit */ }
         <form onSubmit={ ::this.handleSubmit }>
           <input type="text" name="todo" onChange={ ::this.handleChange } />
           <input type="submit" />

@@ -12,6 +12,7 @@ class App extends React.Component {
   }
 
   render() {
+    //7/ Dodajmy devtools do komponentu App
     return (
       <div className="app">
         <TodoForm newTodo={ this.props.addTodo } />

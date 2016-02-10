@@ -19,7 +19,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="app">
-        // 1. Do komponentu możemy przekazać też funkcję
+        { /* // 1. Do komponentu możemy przekazać też funkcję */ }
         <TodoForm newTodo={ ::this.newTodo } />
         <TodoList todos={ this.state.todos } />
       </div>

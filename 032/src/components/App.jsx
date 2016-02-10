@@ -20,6 +20,7 @@ class App extends React.Component {
   }
 }
 
+//3/ Do mapowania akcji dodamy bindActionCreators
 export default connect(state => state, dispatch => ({
   ...bindActionCreators(actions, dispatch)
 }))(App);
